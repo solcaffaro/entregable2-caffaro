@@ -1,27 +1,41 @@
+</html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simulador de Viajes</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <script defer src="app.js"></script>
     <header>
-
-     <h1>Simulador de Viajes</h1>
-
+        <h1>Simulador de Viajes</h1>
     </header>
+
     <main>
-
-     <p>La idea general de mi simulador el la de calcular el costo estimado de un viaje. A través de una serie de preguntas en la consola, podrás elegir un destino, la cantidad de días y agregar extras para obtener un presupuesto detallado. Y así adaptar el viaje a tus preferencias.</p>
-    
+        <form id="formularioViaje">
+            <label for="destino">Elige tu destino:</label>
+            <select id="destino" name="destino">
+                <option value="Ushuaia">Ushuaia</option>
+                <option value="Bariloche">Bariloche</option>
+                <option value="Mendoza">Mendoza</option>
+            </select>
+            <br><br>
+            <label for="dias">Cantidad de días:</label>
+            <input type="number" id="dias" name="dias" min="1" required>
+            <br><br>
+            <p>Extras (opcional):</p>
+            <label><input type="checkbox" name="extras" value="alquiler de auto"> Alquiler de auto</label>
+            <label><input type="checkbox" name="extras" value="tour guiado"> Tour guiado</label>
+            <label><input type="checkbox" name="extras" value="seguro de viaje"> Seguro de viaje</label>
+            <br><br>
+            <button type="submit">Calcular Viaje</button>
+        </form>
     </main>
+
     <footer>
-
         <p>Entregable1+Cáffaro</p>
-
     </footer>
-</body>
-
-</html>
+    <div id="resumenViaje">

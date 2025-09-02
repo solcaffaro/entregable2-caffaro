@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #5d5d81;
+}
+
+/* Estilo para el formulario */
+#formularioViaje {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    background-color: #79a3b1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #658c97;
+}
+
+/* Estilo para la sección de resultados */
+#resumenViaje {
+    background: #e9f5f9;
+    border: 1px solid #cce7e8;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#resumenViaje h3 {
+    color: #5d5d81;
+    border-bottom: 2px solid #5d5d81;
+    padding-bottom: 10px;
+}
+
+#resumenViaje p {
+    margin: 5px 0;
+}
+
+.costo-total {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #366b7b;
+    margin-top: 15px;
+}
